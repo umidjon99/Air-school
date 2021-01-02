@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-logo{
+    position: absolute;
+    top: 50px;
+    color: #e67222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login-text{
+    color: #e67222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.continer{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 2s linear;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 80vh;
+    background-image: url('../images/logo2.png');
+    background-position: center center;
+    background-size:570px;
+    background-repeat: no-repeat;
+    animation: a1 linear 3s infinite;
+}
+.form-group{
+    width: 500px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    height: auto;
+}
+.username,.password{
+    position: relative;
+    width: 350px;
+    display: flex;
+    height: 50px;
+    margin: 15px 0;
+}
+.username input,.password input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    background:#f0f0f0;
+    text-indent: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    color: rgb(128, 124, 124);
+}
+.username .fa-user,.password .fa-lock{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    font-size: 1.3rem;
+    color: rgb(158, 154, 154);
+    z-index: 10000;
+}
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #5995fd;
+    font-weight: 600;
+    margin: 10px 90px;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    text-align: center;
+    color: #f1f1f1;
+}
+button:hover{
+    background: #4384f5;
+}
+.social-network{
+    width: 200px;
+    height: 50px;
+    margin: 15px 0;
+    margin: 30px 80px;
+}
+.social-network a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    transition: 0.3s;
+}
+.social-network a:hover{
+    background: #f0f0f0;
+}
+@keyframes a1{
+    0%{
+        top: 50px;
+    }
+    50%{
+        top:0;
+    }
+    100%{
+        top: 50px;
+    }
+}
+@media screen and (max-width:768px){
+    .logo{
+    width: 100%;
+    height: 100vh;
+    background-size: 150%;
+    animation: none;    
+}
+.login-text{
+    margin: 0 90px;
+}
+.form-group {
+    width: 100%;
+    height: 100vh;
+}
+    form{
+    width: 40%;
+}
+.username input, .password input {
+    position: absolute;
+    width: 53%;
+    height: 72%;
+    border: none;
+    border-radius: 17px;
+    background: #f0f0f0;
+    text-indent: 9px;
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 56px   
+
+}
+    button {
+        width: 120px;
+        height: 40px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        background: #5995fd;
+        font-weight: 600;
+        margin: 5px 87px;
+    }
+    .social-network {
+        width: 200px;
+        height: 50px;
+        margin: 15px 0;
+        margin: 15px 70px;
+    }
+    .username .fa-user, .password .fa-lock {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 120px;
+        z-index: 10000;
+        font-size: 1rem;
+}
+.social-network a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;}
+}
+@media screen and (max-width:425px){
+    .logo{
+    width: 100%;
+    height: 100vh;
+    background-size: 250%;
+    animation: none;    
+}
+.form-group {
+    width: 100%;
+    height: 100vh;
+}
+    form{
+    width: 73%;
+}
+.username input, .password input {
+    position: absolute;
+    width: 49%;
+    height: 70%;
+    border: none;
+    border-radius: 17px;
+    background: #f0f0f0;
+    text-indent: 9px;
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 65px;  
+
+}
+    button {
+        width: 120px;
+        height: 40px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        background: #5995fd;
+        font-weight: 600;
+        margin: 5px 87px;
+    }
+    .social-network {
+        width: 200px;
+        height: 50px;
+        margin: 15px 0;
+        margin: 15px 70px;
+    }
+    .username .fa-user, .password .fa-lock {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 120px;
+        z-index: 10000;
+        font-size: 1rem;
+}
+.social-network a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;}
+}
+@media screen and (max-width: 375px){
+.logo {
+    width: 100%;
+    height: 100vh;
+    background-size: 380%;
+}
+form {
+    width: 100%;
+}
+.username input, .password input {
+    position: absolute;
+    width: 67%;
+    height: 78%;
+}
+.username .fa-user, .password .fa-lock {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 63px;}
+    button {
+        width: 120px;
+        height: 40px;
+        margin: 16px 124px;}
+        .social-network {
+            width: 200px;
+            height: 50px;
+            margin: 15px 0;
+            margin: 38px 96px;
+        }
+}
